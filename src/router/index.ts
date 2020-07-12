@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '/@/pages/Index.vue'
-import Hello from '/@/pages/Hello.vue'
+import JsonFormatter from '/@/pages/JsonFormatter.vue'
 
 export const routerHistory = createWebHistory()
 
@@ -13,9 +13,9 @@ export default createRouter({
       component: Index
     },
     {
-      path: '/hello',
-      name: 'hello',
-      component: Hello
+      path: '/json-formatter',
+      name: 'jsonFormatter',
+      component: JsonFormatter
     }
   ]
 })

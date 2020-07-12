@@ -1,7 +1,7 @@
 <template>
   <routes />
-  <div>Index Page</div>
-  <img alt="Vue logo" src="/@/assets/logo.png" />
+  <h1>Tools</h1>
+  <div>Built on vite.</div>
 </template>
 
 <script lang="ts">
