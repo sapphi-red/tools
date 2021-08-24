@@ -10,9 +10,12 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
 import Routes from '/@/components/Routes.vue'
+import { usePreventUnload } from '/@/composables/usePreventUnload'
 
 const text = ref('')
 const count = computed(() => Array.from(text.value).length)
+
+usePreventUnload(text)
 </script>
 
 <style lang="scss" module>
