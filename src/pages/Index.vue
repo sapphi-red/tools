@@ -20,7 +20,7 @@ usePreventUnload(text)
 
 <style lang="scss" module>
 .input {
-  width: 100%;
+  width: calc(100% - 2rem);
   height: 30vh;
   margin: 1rem;
 }
