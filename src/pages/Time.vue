@@ -6,30 +6,20 @@
   <div>{{ date }}</div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+<script lang="ts" setup>
+import { ref, computed } from 'vue'
 import Routes from '/@/components/Routes.vue'
 
-export default defineComponent({
-  name: 'Time',
-  components: {
-    Routes
-  },
-  setup() {
-    const text = ref('')
-    const date = computed(() => {
-      try {
-        const textNum = parseInt(text.value)
-        if (Number.isNaN(textNum)) return 'NaN'
+const text = ref('')
+const date = computed(() => {
+  try {
+    const textNum = parseInt(text.value)
+    if (Number.isNaN(textNum)) return 'NaN'
 
-        const date = new Date(textNum * 1000)
-        return date.toLocaleString()
-      } catch (e) {
-        return e
-      }
-    })
-
-    return { text, date }
+    const date = new Date(textNum * 1000)
+    return date.toLocaleString()
+  } catch (e) {
+    return e
   }
 })
 </script>

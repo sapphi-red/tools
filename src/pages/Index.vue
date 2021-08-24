@@ -7,21 +7,12 @@
   <div>Character count: {{ count }}</div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+<script lang="ts" setup>
+import { ref, computed } from 'vue'
 import Routes from '/@/components/Routes.vue'
-export default defineComponent({
-  name: 'Index',
-  components: {
-    Routes
-  },
-  setup() {
-    const text = ref('')
-    const count = computed(() => Array.from(text.value).length)
 
-    return { text, count }
-  }
-})
+const text = ref('')
+const count = computed(() => Array.from(text.value).length)
 </script>
 
 <style lang="scss" module>

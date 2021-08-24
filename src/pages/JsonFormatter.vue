@@ -9,27 +9,17 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import Routes from '/@/components/Routes.vue'
-import { defineComponent, ref, computed } from 'vue'
+import { ref, computed } from 'vue'
 
-export default defineComponent({
-  name: 'JsonFormatter',
-  components: {
-    Routes
-  },
-  setup() {
-    const text = ref()
+const text = ref('')
 
-    const formatted = computed(() => {
-      try {
-        return JSON.stringify(JSON.parse(text.value), undefined, 2)
-      } catch (e) {
-        return e
-      }
-    })
-
-    return { text, formatted }
+const formatted = computed(() => {
+  try {
+    return JSON.stringify(JSON.parse(text.value), undefined, 2)
+  } catch (e) {
+    return e
   }
 })
 </script>
