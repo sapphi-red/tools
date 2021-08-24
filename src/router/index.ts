@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Index from '/@/pages/Index.vue'
 import JsonFormatter from '/@/pages/JsonFormatter.vue'
 import Time from '/@/pages/Time.vue'
+import Encode from '/@/pages/Encode.vue'
 
 export const routerHistory = createWebHistory()
 
@@ -22,6 +23,11 @@ export default createRouter({
       path: '/time',
       name: 'time',
       component: Time
+    },
+    {
+      path: '/encode',
+      name: 'encode',
+      component: Encode
     }
   ]
 })
