@@ -12,7 +12,6 @@
     "lib": ["esnext", "dom", "dom.iterable"],
     "skipLibCheck": true,
     "noEmit": true,
-    "typeRoots": ["node_modules/@types", "src/types"],
     "paths": {
       "/@/*": ["src/*"]
     }
