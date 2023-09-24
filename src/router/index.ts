@@ -3,6 +3,7 @@ import Index from '/@/pages/Index.vue'
 import JsonFormatter from '/@/pages/JsonFormatter.vue'
 import Time from '/@/pages/Time.vue'
 import Encode from '/@/pages/Encode.vue'
+import FormatText from '/@/pages/FormatText.vue'
 
 export const routerHistory = createWebHistory()
 
@@ -28,6 +29,11 @@ export default createRouter({
       path: '/encode',
       name: 'encode',
       component: Encode
+    },
+    {
+      path: '/format-text',
+      name: 'formatText',
+      component: FormatText
     }
   ]
 })

@@ -7,5 +7,7 @@
     <router-link :to="{ name: 'time' }">Time</router-link>
     <span>|</span>
     <router-link :to="{ name: 'encode' }">Encode</router-link>
+    <span>|</span>
+    <router-link :to="{ name: 'formatText' }">Format Text</router-link>
   </div>
 </template>
