@@ -29,7 +29,7 @@ const copy = async () => {
 }
 </script>
 
-<style lang="scss" module>
+<style module>
 .container {
   display: flex;
   width: 100%;

@@ -24,7 +24,7 @@ const date = computed(() => {
 })
 </script>
 
-<style lang="scss" module>
+<style module>
 .input {
   margin: 1rem;
 }

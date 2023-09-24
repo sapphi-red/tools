@@ -18,7 +18,7 @@ const count = computed(() => Array.from(text.value).length)
 usePreventUnload(text)
 </script>
 
-<style lang="scss" module>
+<style module>
 .input {
   width: calc(100% - 2rem);
   height: 30vh;

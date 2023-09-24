@@ -53,7 +53,7 @@ const toURIComponent = computed(() => encodeURIComponent(text.value))
 const fromURIComponent = computed(() => decodeURIComponent(text.value))
 </script>
 
-<style lang="scss" module>
+<style module>
 .input {
   margin: 1rem;
 }

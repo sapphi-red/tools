@@ -24,7 +24,7 @@ const formatted = computed(() => {
 })
 </script>
 
-<style lang="scss" module>
+<style module>
 .container {
   display: flex;
   width: 100%;
