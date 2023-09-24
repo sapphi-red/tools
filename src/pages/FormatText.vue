@@ -19,7 +19,7 @@ import { ref, computed } from 'vue'
 const text = ref('')
 
 const formatted = computed(() =>
-  text.value.split('\n').join(' ').split('. ').join('.\n\n')
+  text.value.replaceAll('\n', ' ').replaceAll(/\.\s+/g, '.\n\n')
 )
 
 const copyMessage = refAutoReset('', 1000)
