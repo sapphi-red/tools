@@ -4,6 +4,7 @@ import JsonFormatter from '/@/pages/JsonFormatter.vue'
 import Time from '/@/pages/Time.vue'
 import Encode from '/@/pages/Encode.vue'
 import FormatText from '/@/pages/FormatText.vue'
+import RichCopy from '/@/pages/RichCopy.vue'
 
 export const routerHistory = createWebHistory()
 
@@ -34,6 +35,11 @@ export default createRouter({
       path: '/format-text',
       name: 'formatText',
       component: FormatText
+    },
+    {
+      path: '/rich-copy',
+      name: 'richCopy',
+      component: RichCopy
     }
   ]
 })

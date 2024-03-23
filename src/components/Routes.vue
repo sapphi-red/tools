@@ -9,5 +9,7 @@
     <router-link :to="{ name: 'encode' }">Encode</router-link>
     <span>|</span>
     <router-link :to="{ name: 'formatText' }">Format Text</router-link>
+    <span>|</span>
+    <router-link :to="{ name: 'richCopy' }">Rich Copy</router-link>
   </div>
 </template>
